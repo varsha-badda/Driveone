@@ -11,20 +11,18 @@
     
 <form class="w-90" action="/user/register" method="post" class="w-96">
 
-        <div class="mb-6 ">
-            <label for="user_name" class="block mb-2.5 text-sm font-medium text-heading">User name</label>
-            <input type="text" id="user_name" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="John" required />
-        </div>
+    <div class="mb-6 ">
+        <label for="user_name" class="block mb-2.5 text-sm font-medium text-heading">User name</label>
+        <input type="text" id="user_name" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="John" name ="username" required />
+    </div>
    
     <div class="mb-6">
         <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Email address</label>
-        <input type="email" id="email" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="john.doe@company.com" required 
-        name="email"/>
+        <input type="email" id="email" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="john.doe@company.com" name="email" required />
     </div> 
     <div class="mb-6">
         <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Password</label>
-        <input type="password" id="password" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required 
-        name="password"/>
+        <input type="password" id="password" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••"  name="password" required/>
     </div> 
     
     <button

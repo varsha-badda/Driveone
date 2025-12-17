@@ -1,12 +1,19 @@
 const express = require('express');
 const router = express.Router();
+const {body,validationResult} = require('express-validator');
+
 
 router.get('/register',(req,res)=>{
     res.render('register')
 })
-router.post('/register',(req,res)=>{
+router.post('/register',
+    body('email').trim().isEmail(),
+    body('username').trim().isLength({min:3}),
+    body('password').trim().isLength({min:5}),
+    (req,res)=>{
+        const errors = validationResult(req);
     console.log(req.body)
-    res.send("user register")
+    res.send("user registered")
 })
 
 
